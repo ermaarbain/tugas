@@ -1,0 +1,17 @@
+{
+  "name": "tcterma",
+  "version": "1.0.0",
+  "description": "aplikasi tugas cloud computing",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Erma Arbain",
+  "license": "MIT"
+}

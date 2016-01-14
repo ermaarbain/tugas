@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		title!= title		 
+	body
+		h1!= title
+		#container
+			form(method='post')
+				.inputan
+					label Merk
+					if data.merk
+						input(type='text', name='merk', value=data.merk)
+					else
+						input(type='text', name='merk')
+				.inputan
+					label Warna
+					if data.warna
+						input(type='text', name='warna', value=data.warna)
+					else
+						input(type='text', name='warna')
+				.inputan
+					label Tipe
+					if data.tipe					  
+						input(type='text', name='tipe', value=data.tipe)
+					else
+						input(type='text', name='tipe')
+				.inputan
+					label Jenis
+					if data.warna
+						input(type='text', name='jenis', value=data.jenis)
+					else
+						input(type='text', name='jenis')
+				button(type='submit') Simpan
