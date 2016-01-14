@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title!= title
+  body
+    h1!= title
+    #container
+    div
+        table
+            thead
+                tr
+                    th= 'Merk'
+                    th= 'Warna'
+                    th= 'tipe'
+                    th= 'jenis'
+                    th= 'Aksi'
+            tbody
+                for item in data
+                    tr
+                        td= item.merk
+                        td= item.warna
+                        td= item.tipe
+                        td= item.jenis
+                        td 
+                            a(href="/mobil/ubah/"+item.id) Ubah
+                            a(href="/mobil/hapus/"+item.id) Hapus
+        a(class='button', href='/mobil/tambah') Tambah Mobil
